@@ -9,6 +9,6 @@ Currently only Windows is supported. Linux/Unix/Mac OS support will be added in 
 
 INSTALL:
 
-run build - This will build the AmbientLib, the Web browser plug-in and a sample device driver. Furthermore, a .msi will be created for installing
+run build with the Visual Studio 2010 Command Prompt - This will build the AmbientLib, the Web browser plug-in and a sample device driver. Furthermore, a .msi will be created for installing
 
 After installing the AmbientLib package run postInstall.exe (located in the directory where AmbientLib was installed) as Administrator. This will register the Web browser plug-in and will create the needed registry entries.
