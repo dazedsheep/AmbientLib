@@ -1,0 +1,117 @@
+----------------------------
+06.04.2011 by Benjamin Rainer
+----------------------------
+
+This tutorial should show you, how you can create a device driver for the Ambient Library. A device driver is just a standard dll. Everything else is up to you.
+
+First of all you need to include a few files into your project:
+
+	- DeviceInterface.h 
+	- DeviceInterface.cpp		
+	- Classification.h
+	- Classification.cpp		Provides you the MPEG-V descriptions parts. 
+	- Element.h
+	- Element.cpp			I would suggest that you take a look at this file, because this is the result of the parsed xml input.
+	- Utils.h
+	- Utils.cpp			Some useful utility functions.
+	- typedef.h
+	- ptr.h				Simple smart pointers.
+
+Let's take a closer look at DeviceInterface.h:
+
+class DeviceInterface {
+
+public:
+	virtual ~DeviceInterface(){};
+
+	// play effects
+	virtual bool playEffect(Element e);
+	virtual bool playEffectAtTime(double time);
+	
+	// show color
+	virtual void colorToDevice(std::string, int r, int g, int b);
+	virtual void displayColor();
+
+	// activate / deactivate all devices 
+	virtual void activateAllAvailableDevices(bool activate);
+
+	// error handling
+	virtual std::string getErrorString();
+	virtual bool hasError();
+	
+	// adding effects to the device driver
+	virtual void addEffect(Element *e);
+	virtual void addEffects(std::vector<Element*> elements);
+
+	// check which devices are supported
+	virtual void getSupportedSensoryEffects(ptr<std::vector<int>> & vec);
+	
+	// function to retreive the locations of the devices
+	virtual std::vector<std::string> getLocations(int SUPPORTED);
+	
+};
+
+As you may see, none of these functions/methods are mandatory. This is because this class is also implemented in DeviceInterface.cpp to provide some convenience.
+
+I would suggest that you implement at least 3 functions from this Interface. Namely, playEffectAtTime. getSupportedSensoryEffects and addEffects.
+
+With these two methods your device driver will be asked to handle effects, except automatic calculated light. 
+
+If your device supports lights you'll have to implement colorToDevice and displayColor in addition to the other methods.
+
+A sample class definition may look like this:
+
+class myMAINCLASS : public DeviceInterface
+{
+
+ public:
+ myMAINCLASS();
+ ~myMAINCLASS();
+
+ // and now override some functions/method from the interface
+
+ bool playEffectAtTime(double time);
+ void getSupportedSensoryEffects(ptr<std::vector<int>> & vec);
+ void addEffects(std::vector<Element *> elements);
+ ...
+
+};
+
+
+The addEffects method is called by the library to hand over the effects parsed from an SEM file.
+
+This method enables you to keep track which effects are there and which effects belong to your device. 
+
+In addition you will need to implement this method because otherwise you won't know when you have to display an effect.
+
+I.e. you get all the effects parsed by the libraray from an SEM file. Then the library calls your device driver to play an effect at a given timestamp.
+
+You'll have to check:
+
+ 1. Is there an effect which corresponds to your device ?
+ 2. If yes should it be played now ? 
+
+The next thing is, that you will have to define the entry point to your device driver. You may have noticed this few lines in DeviceInterface.h:
+
+#ifdef DEVICE_DRIVER_IMPLEMENTATION
+extern "C" __declspec(dllexport) DeviceInterface *InitDeviceDriver();
+#else
+typedef DeviceInterface* (CALLBACK* InitDeviceDriver)();
+#endif
+
+What you have to do is to add a preprocessor directive DEVICE_DRIVER_IMPLEMENTATION and then implement the function InitDeviceDriver, which should return an instance of the class which implements the DeviceInterface.
+
+For instance:
+
+DeviceInterface *InitDeviceDriver()
+{
+	return (DeviceInterface *)(new myMAINCLASS());
+}
+
+How you develop your device driver is up to you!
+
+NOTE (VERY IMPORTANT): You have to compile your dll with the /MD compiler option! This makes sure that the library and your device driver are using the same CRT, otherwise you may encounter errors/problems when using the std-lib among dll boundaries.
+
+If you are compiling you project in debug state for debugging please use the apropriate debug AmbientLib dll. Otherwise use the dll from the release tree.
+
+If you have any questions, feel free to contact me: benjamin.rainer@snapu.net.

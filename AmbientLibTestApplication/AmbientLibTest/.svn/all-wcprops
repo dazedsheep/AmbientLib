@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/mpegrose/!svn/ver/324/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/mpegrose/!svn/ver/268/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/stdafx.h
+END
+AmbientLibTest.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/mpegrose/!svn/ver/425/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/AmbientLibTest.vcxproj
+END
+AmbientLibTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/mpegrose/!svn/ver/502/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/AmbientLibTest.cpp
+END
+AmbientLibTest.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/mpegrose/!svn/ver/268/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/AmbientLibTest.vcxproj.filters
+END
+targetver.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/mpegrose/!svn/ver/268/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/targetver.h
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/mpegrose/!svn/ver/268/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/stdafx.cpp
+END
+AmbientLibTest.vcxproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/mpegrose/!svn/ver/268/branches/AmbientLib/AmbientLibTestApplication/AmbientLibTest/AmbientLibTest.vcxproj.user
+END

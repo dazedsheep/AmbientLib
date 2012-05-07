@@ -1,0 +1,19 @@
+#pragma once
+class DLL DebugAmbient : public Ambient
+{
+public:
+	DebugAmbient(bool allowThreads,bool disableFateTime, bool enableAutoColor, unsigned int width, unsigned int height);
+
+	~DebugAmbient(void);
+
+	// some useful things
+	bool forceColorAlgorithmCPUSupport(bool set);
+	bool colorAlgorithmHasCPUSupport();
+	bool colorAlgorithmUsesCPUSupport();
+	void testHTTP();
+	void testDeviceContextCreate();
+	void testDeviceContextClose();
+	void runEffectAnalysis(const char *path,unsigned int length);
+	void testScreenSplitter(unsigned int x, unsigned int y);
+};
+

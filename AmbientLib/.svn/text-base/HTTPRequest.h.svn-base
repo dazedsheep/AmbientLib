@@ -1,0 +1,19 @@
+#pragma once
+
+namespace AmbientLib{
+	namespace HTTP{
+
+	class HTTPRequest
+	{
+		private:
+			std::string request;
+
+		public:
+			HTTPRequest(std::string method, std::string url, std::string host);
+			std::string getRequest();
+			
+			~HTTPRequest(void);
+	};
+
+	}
+}

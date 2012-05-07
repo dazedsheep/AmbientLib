@@ -1,0 +1,13 @@
+/*
+ * threading.h	- Written by Benjamin Rainer 2010-2011
+ *
+ * Copyright University of Klagenfurt - ITEC
+ * 
+ * Please do not modify the code. If you find any bugs, please let us know.
+ */
+
+#include <Windows.h>
+
+DWORD ThreadFunc(LPVOID threadParams);
+void *initThreading(HANDLE mutex);
+

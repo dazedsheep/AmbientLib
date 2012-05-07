@@ -1,0 +1,397 @@
+/*
+ * SEMhttp.cpp
+ *****************************************************************************
+ * Copyright (C) 2011 - 2013 Alpen-Adria-Universität Klagenfurt
+ *
+ * Created on: April 9, 2011
+ * Authors: Benjamin Rainer <benjamin.rainer@itec.aau.at>
+ *
+ * This file is part of ambientLib.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published
+ * by the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ *****************************************************************************/
+
+#include "StdAfx.h"
+#include <WinSock.h>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <MMSystem.h>
+#include <winhttp.h>
+#include "HTTPConnector.h"
+#include "HTTPRequest.h"
+#include "HTTPResponse.h"
+#include "ptr.h"
+#include "SEMhttp.h"
+
+using namespace AmbientLib;
+using namespace std;
+
+SEMhttp::SEMhttp(std::string url,std::string SEMFile)
+{
+	this->url = url;
+	this->video = SEMFile;
+	if(url.find("https://") != std::string::npos)
+	{
+		// use the WINHTTP API
+		https = true;
+	}else{
+		http = new HTTP::HTTPConnector(url);	// our own lightweight HTTP-Client, works great with standard HTTP 1.1 but... when it comes down to HTTPS with SSL or TSL we use the winHTTP
+		https = false;
+	}
+//	cout << http->getLastDebugMessage().c_str() << endl;
+//	cout << http->getLastErrorMessage().c_str() << endl;
+
+	size_t found = video.find(".xml");
+	if(found != string::npos){
+			video = video.substr(0,found);
+	}
+//	cout <<"video:"<< video.c_str() <<endl;
+}
+
+
+/*
+ *
+ * TODO: NEEDS A SPEEDUP!
+ */
+std::vector<std::string> SEMhttp::loadSEMList(){
+	
+#ifdef TIMING_DEBUG
+	unsigned int amsa,emsa,amsb,emsb;
+#endif
+	if(!http->HTTPConnect()){
+
+		cout << http->getLastDebugMessage().c_str() << endl;
+		cout << http->getLastErrorMessage().c_str() << endl;
+
+
+	}else{
+#ifdef TIMING_DEBUG
+		amsa = timeGetTime();
+#endif
+		std::string payload = http->HTTPGet("");
+#ifdef TIMING_DEBUG
+		emsa = timeGetTime();
+#endif
+		// filter our html list..., we won't parse it just search for all .xml (LATER VERSIONS: MAY BE HTML parser :X ?)
+		// encoded name is in the ahref so we may save both types, once with encoded space %20 and once without
+		std::vector<std::string> myVec;
+		size_t found = payload.find(".xml");
+		std::string f1,f2;
+		size_t pos;
+		char *p = (char *) payload.c_str();
+		char c;
+#ifdef TIMING_DEBUG
+		amsb = timeGetTime();
+#endif
+		while(found != string::npos){
+
+			// extract the file names
+			
+			// we have to step backwards, until we reach "\""
+			p = (char *)payload.c_str();
+			pos = found;
+			c = p[pos];
+			while(c != '\"'){
+
+				pos --;
+				c = p[pos];
+
+			};
+
+			// okay we have got it
+
+			f1 = payload.substr(pos+1,found-pos+strlen("xml"));
+			payload = payload.substr(found+strlen("xml"),payload.length());
+			
+			// here we have to step backwards, until we reach ">"
+			found = payload.find(".xml");
+			pos = found;
+			p = (char *)payload.c_str();
+			c = p[pos];
+			while(c != '>'){
+
+				pos --;
+				c = p[pos];
+
+			};
+		
+			f2 = payload.substr(pos+1,found-pos+strlen("xml"));
+			payload = payload.substr(found+strlen("xml"),payload.length());
+			myVec.push_back(f1);
+			myVec.push_back(f2);
+
+			found = payload.find(".xml");		// and the next round......
+			
+		}
+#ifdef TIMING_DEBUG
+		emsb = timeGetTime();
+		std::cout << "execution time for fetching list: " << emsa-amsa << std::endl;
+		std::cout << "execution time for filtering list: " << emsb-amsb << std::endl;
+#endif
+		this->SEMList = myVec;
+		http->HTTPDisconnect();
+	}
+	
+
+
+
+	return this->SEMList;
+}
+
+std::string SEMhttp::fetchFirstSEM(std::vector<std::string> list){
+	std::string finalSEM;
+#ifdef TIMING_DEBUG
+	unsigned int ams,ems;
+	ams = timeGetTime();
+#endif
+	if (list.size() > 0){
+
+			for(unsigned int i=0;i<list.size();i+=2){
+				
+				// we just take the real names
+
+				if(list[i+1].find(video) != string::npos){
+
+					// we have found our SEM, try to load it from the webserver
+
+					finalSEM = list[i]; // we save the encoded name, because of space, so we don't have to bother about them
+					break;
+
+				}
+
+			}
+	
+			// do not empty the vector, hand it over to the user so he/she can select one SEM file
+			// but we load the first one !
+			
+			
+			SEM = loadSEM(finalSEM);
+		
+		}
+#ifdef TIMING_DEBUG
+	ems = timeGetTime();
+	std::cout << "execution time: " << ems-ams << std::endl;
+#endif
+
+	return SEM;
+
+}
+
+std::string SEMhttp::useHTTPS(std::string &sem)
+{
+	BOOL bResult = FALSE;
+	DWORD dwSize = 0;
+	LPSTR buffer;
+	DWORD downloaded = 0;
+	std::string outp("");
+	HINTERNET hSession = NULL,hConnect = NULL, hRequest = NULL;
+	size_t found;
+	WINHTTP_AUTOPROXY_OPTIONS	AutoProxyOptions;
+	WINHTTP_PROXY_INFO			ProxyInfo;
+	unsigned int				proxyInfoSize = sizeof(ProxyInfo);
+	wchar_t *_wurl;
+	wchar_t *_whost;
+	wchar_t *_fullurl;
+	std::string full_url("https://");
+	
+	ZeroMemory( &AutoProxyOptions, sizeof(AutoProxyOptions) );
+	ZeroMemory( &ProxyInfo, sizeof(ProxyInfo) );
+
+	hSession = WinHttpOpen(L"AmbientLib HTTPS - Client 1.1", WINHTTP_ACCESS_TYPE_NO_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+	
+	if(!hSession) 
+	{
+		std::cout << "session error" << std::endl;
+		MessageBox(NULL, "HTTPS - Error opening session.", "HTTPS - Client", MB_OK);
+		return outp;
+	}
+
+	// check for https
+	found = url.find("https://");
+	if (found != string::npos)
+	{
+		url = url.substr(strlen("https://"),url.length());
+	}else{
+		// uhm ERROR ?!
+		throw;
+	}
+
+	// find the first occurence of /, and extract the host
+
+	found = url.find("/");	// the first occoruence, right after the host
+
+	std::string f_url;
+	f_url = url.substr(found);
+	f_url.append(sem);
+	std::string host;
+	host = url.substr(0,found); // only the host
+	
+	_whost = new wchar_t[strlen(host.c_str())+1];
+	memset(_whost,0,strlen(host.c_str())+1);
+	MultiByteToWideChar(CP_ACP,NULL,host.c_str(),-1,_whost,strlen(host.c_str())+1);
+	
+	hConnect = WinHttpConnect(hSession,_whost,INTERNET_DEFAULT_HTTPS_PORT, 0);
+	
+	if(!hConnect)
+	{
+		delete [] _whost;
+
+		std::cout << "connection error" << std::endl;
+		MessageBox(NULL, "HTTPS - Error opening connection.", "HTTPS - Client", MB_OK);
+		goto _EXIT;
+
+	}
+
+	
+	_wurl = new wchar_t[strlen(f_url.c_str())+1];
+	memset(_wurl,0,strlen(f_url.c_str())+1);
+	MultiByteToWideChar(CP_ACP,NULL,f_url.c_str(),-1,_wurl,strlen(f_url.c_str())+1);
+
+	hRequest = WinHttpOpenRequest( hConnect, L"GET", _wurl,NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
+	
+	DWORD dwIgnoreFlags = SECURITY_FLAG_IGNORE_UNKNOWN_CA|SECURITY_FLAG_IGNORE_CERT_DATE_INVALID|SECURITY_FLAG_IGNORE_CERT_CN_INVALID|SECURITY_FLAG_IGNORE_CERT_WRONG_USAGE; 
+    WinHttpSetOption(hRequest, WINHTTP_OPTION_SECURITY_FLAGS, &dwIgnoreFlags,sizeof(dwIgnoreFlags)); 
+
+	// before we do anything, we will try to get a proxy configuration
+
+	AutoProxyOptions.dwFlags = WINHTTP_AUTOPROXY_AUTO_DETECT;
+
+	// dhcp and dns auto detection
+	AutoProxyOptions.dwAutoDetectFlags = WINHTTP_AUTO_DETECT_TYPE_DHCP | WINHTTP_AUTO_DETECT_TYPE_DNS_A;
+
+	AutoProxyOptions.fAutoLogonIfChallenged = TRUE;
+	
+	
+	full_url.append(host);
+	full_url.append(f_url);
+	
+	_fullurl = new wchar_t[strlen(full_url.c_str())+1];
+	memset(_fullurl,0,strlen(full_url.c_str())+1);
+	MultiByteToWideChar(CP_ACP,NULL,full_url.c_str(),-1,_fullurl,strlen(full_url.c_str())+1);
+
+
+
+	if( WinHttpGetProxyForUrl( hSession, _fullurl, &AutoProxyOptions, &ProxyInfo) )
+	{
+		if (!WinHttpSetOption( hRequest, WINHTTP_OPTION_PROXY, &ProxyInfo, proxyInfoSize))
+		{
+			goto EXIT;
+		}
+	}
+
+	std::cout << full_url.c_str()<< std::endl;
+	if(hRequest) bResult = WinHttpSendRequest( hRequest, WINHTTP_NO_ADDITIONAL_HEADERS, 0, WINHTTP_NO_REQUEST_DATA, 0, 0, 0);
+	else
+	{
+		std::cout << "request open error" << std::endl;
+		MessageBox(NULL, "HTTPS - Error sending request.", "HTTPS - Client", MB_OK);
+		goto EXIT;
+	}
+	
+
+	if( bResult )  bResult = WinHttpReceiveResponse( hRequest, NULL );
+
+	 if( bResult )
+  {
+    do 
+    {
+      // Check for available data.
+      dwSize = 0;
+      if( !WinHttpQueryDataAvailable( hRequest, &dwSize ) )
+        printf( "Error %u in WinHttpQueryDataAvailable.\n",
+                GetLastError( ) );
+
+      // Allocate space for the buffer.
+      buffer = new char[dwSize+1];
+      if( !buffer )
+      {
+        printf( "Out of memory\n" );
+        dwSize=0;
+      }
+      else
+      {
+        // Read the data.
+        ZeroMemory( buffer, dwSize+1 );
+
+        if( !WinHttpReadData( hRequest, (LPVOID)buffer, dwSize, &downloaded ) )
+          printf( "Error %u in WinHttpReadData.\n", GetLastError( ) );
+   
+        // Free the memory allocated to the buffer.
+		outp.append(buffer);
+        delete [] buffer;
+      }
+    } while( dwSize > 0 );
+  }
+
+EXIT:
+
+delete []_wurl;
+delete []_fullurl;
+
+_EXIT:
+   delete []_whost;
+ 
+   if(ProxyInfo.lpszProxy != NULL) GlobalFree(ProxyInfo.lpszProxy);
+   if(ProxyInfo.lpszProxyBypass != NULL) GlobalFree(ProxyInfo.lpszProxyBypass);
+
+
+   if( !bResult )
+   {
+    printf( "Error %d has occurred.\n", GetLastError( ) );
+	char _buf[40];
+	itoa(GetLastError(), _buf, 10);
+	std::string _e("Error ");
+	_e.append(_buf);
+	_e.append(" has occured and can't be resolved. No SEM will be loaded!");
+	
+	MessageBox(NULL, _e.c_str(),"HTTPS - Client", MB_OK);
+   }
+  // Close any open handles.
+  if( hRequest ) WinHttpCloseHandle( hRequest );
+  if( hConnect ) WinHttpCloseHandle( hConnect );
+  if( hSession ) WinHttpCloseHandle( hSession );
+  return outp;
+}
+
+// load a specific SEM file
+std::string SEMhttp::loadSEM(std::string thisSEM){
+	std::string finalSEM;
+	std::string st;
+	if(https)
+	{
+		 st = useHTTPS(thisSEM);
+		
+		 return st;
+	}
+
+	if(!http->HTTPConnect()){
+
+		cout << http->getLastDebugMessage().c_str() << endl;
+		cout << http->getLastErrorMessage().c_str() << endl;
+
+
+	}else{
+
+		finalSEM = http->HTTPGet(thisSEM);
+	}
+
+	return finalSEM;
+}		
+
+SEMhttp::~SEMhttp(void)
+{
+	delete http.get_pointer();
+}

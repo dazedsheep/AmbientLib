@@ -1,0 +1,32 @@
+#ifndef LIBXML_H
+#define LIBXML_H
+
+#include <vector>
+#include <string>
+#include "Element.h"
+#include "libxml/xmlreader.h"
+
+class Libxml
+{
+private:
+	void processNode(xmlTextReaderPtr reader);
+	bool m_anchorElement;
+	long m_timeScale;
+	double m_curTime;
+	Element *m_tmpElement;
+	void streamFile(const char *filename);
+	void streamFileFromMemory(std::string file);
+	std::vector<Element*> *m_Elements;
+	static bool elementCompare(const Element* element1, const Element* element2);
+	bool m_bAutoColor;
+
+public:
+	Libxml();
+	~Libxml();
+	std::vector<Element*> parse(const char* filename);
+	std::vector<Element *> parse(std::string file);
+	bool isAutoColorActivated();
+	long getTimeScale();
+};
+
+#endif

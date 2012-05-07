@@ -1,0 +1,29 @@
+#pragma once
+
+namespace AmbientLib{
+
+class SEMhttp
+{
+private:
+	ptr<HTTP::HTTPConnector> http;
+	std::vector<std::string> SEMList;
+	std::string SEM;
+	std::string url,video;
+	bool https;
+
+	std::string useHTTPS(std::string &sem);
+
+public:
+	SEMhttp(std::string url, std::string SEMFile);
+	
+	std::vector<std::string> loadSEMList();
+	
+	std::string fetchFirstSEM(std::vector<std::string> list);
+	
+	std::string loadSEM(std::string thisSEM);
+
+	~SEMhttp(void);
+};
+
+}
+

@@ -1,0 +1,68 @@
+/*
+ * This declares the interface to our device "drivers"
+ * For more explenation see the documentation
+ */
+
+#pragma once
+
+
+// THIS LIST MUST MATCH THE LIST IN AMBIENTLIB.H !
+#define DEVICE_SUPPORTS_LIGHTS		100
+#define DEVICE_SUPPORTS_FANS		200
+#define DEVICE_SUPPORTS_RUMBLERS	300
+#define DEVICE_SUPPORTS_SCENT		400
+#define DEVICE_SUPPORTS_WATER		500
+#define DEVICE_SUPPORTS_FOG			600
+// ... future extensions
+
+
+class DeviceInterface {
+
+public:
+	virtual ~DeviceInterface(){};
+	
+	virtual void setVideoLength(double length);
+	virtual double getVideoLength();
+
+
+	// play effects
+	virtual bool playEffect(Element e);
+	virtual bool playEffectAtTime(double time);
+	
+	// show color
+	virtual void colorToDevice(std::string, int r, int g, int b);
+	virtual void displayColor();
+
+	// activate / deactivate all devices 
+	virtual void activateAllAvailableDevices(bool activate);
+	virtual void activateDevice(unsigned int DEVICE, bool activate);
+	virtual void activateAutoColor(bool activate);
+
+	// error handling
+	virtual std::string getErrorString();
+	virtual bool hasError();
+	virtual void clearError();
+	
+	// adding effects to the device driver
+	virtual void addEffect(Element *e);
+	virtual void addEffects(std::vector<Element*> elements);
+
+	// check which devices are supported
+	virtual void getSupportedSensoryEffects(ptr<std::vector<int>> & vec);
+	
+	// function to retrieve the locations of the devices
+	virtual std::vector<std::string> getLocations(int SUPPORTED);
+	
+};
+
+
+#ifdef DEVICE_DRIVER_IMPLEMENTATION
+extern "C" __declspec(dllexport) DeviceInterface *ctor_a_InitDeviceDriver(bool disableFateTime, std::vector<Element*> elements);
+extern "C" __declspec(dllexport) DeviceInterface *ctor_b_InitDeviceDriver(bool disableFateTime);
+extern "C" __declspec(dllexport) DeviceInterface *ctor_c_InitDeviceDriver();
+#else
+typedef DeviceInterface* (*ctor_a_InitDeviceDriver)(bool disableFateTime, std::vector<Element*> elements);
+typedef DeviceInterface* (*ctor_b_InitDeviceDriver)(bool disableFateTime);
+typedef DeviceInterface* (*ctor_c_InitDeviceDriver)();
+#endif
+

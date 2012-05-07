@@ -1,0 +1,75 @@
+#include "StdAfx.h"
+#include <iostream>
+#include <vector>
+#include <WinSock.h>
+#include "ptr.h"
+#include "HTTPResponse.h"
+#include "HTTPConnector.h"
+
+
+using namespace AmbientLib::HTTP;
+
+using namespace std;
+
+HTTPResponse::HTTPResponse(void)
+{
+
+}
+
+HTTPResponse::HTTPResponse(std::string response)
+{
+
+
+	
+	// parse the response, for instance check the first line ...
+	// seperate the data from the header, if there is data
+	
+
+	std::string status = response.substr(strlen(HTTP_VERSION)+1,3);
+
+	statusCode = atoi(status.c_str());
+
+	// check if the request was valid
+	if(statusCode == HTTP_OK){
+
+		// extract the data
+		unsigned int dataLength = atoi(getFieldValue(HTTP_CONTENT_LENGTH, response).c_str());
+
+		header = response.substr(0,response.length() - dataLength);
+		payload = response.substr(response.length() - dataLength,response.length());
+
+	}
+
+
+	// TODO... EXTEND
+	
+
+}
+
+HTTPResponse::~HTTPResponse(void)
+{
+
+}
+
+std::string HTTPResponse::getHeader(){
+
+	return header;
+}
+
+std::string HTTPResponse::getPayload(){
+
+	return payload;
+}
+
+unsigned int  HTTPResponse::getStatusCode(){
+
+	return statusCode;
+}
+
+std::string HTTPResponse::getFieldValue(const char* HTTPFIELD, std::string str){
+	size_t pos = str.find(HTTPFIELD);
+	std::string n = str.substr(pos+strlen(HTTPFIELD),str.length());
+	pos = n.find(HTTP_CRLF);
+	std::string field = n.substr(0,pos);
+	return field;
+}

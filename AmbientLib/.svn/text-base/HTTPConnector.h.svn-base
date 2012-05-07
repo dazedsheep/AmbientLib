@@ -1,0 +1,47 @@
+#pragma once
+namespace AmbientLib{
+	namespace HTTP{
+
+#define HTTP_CRLF				"\r\n"
+#define HTTP_VERSION			"HTTP/1.1"
+#define HTTP_HOST				"Host:"
+#define HTTP_USER_AGENT			"User-Agent: Ambient Lib - AAU"
+#define HTTP_ACCEPT				"Accept: text/plain"
+#define HTTP_KEEP_ALIVE			"Keep-Alive: 115"
+#define HTTP_CONNECTION_STATE	"Connection: keep-alive"
+#define HTTP_CONTENT_LENGTH		"Content-Length: "
+
+
+#define MAX_HTTP_PACKET_SIZE	65000
+
+class HTTPConnector
+{
+
+private:
+
+	std::string _host,_url;
+	unsigned short _port; 
+	SOCKET mySocket;
+	std::string errorMessage;
+	std::string debugMessage;
+	bool connected;
+
+public:
+	
+	HTTPConnector();
+	HTTPConnector(std::string url);
+	HTTPConnector(std::string host,std::string url,unsigned short port);
+	std::string HTTPGet(std::string file);
+	bool HTTPConnect();
+	int HTTPSend(std::string request);
+	std::string HTTPRecv(int len);
+
+	std::string HTTPReceiveResponse();
+	bool HTTPDisconnect();
+	~HTTPConnector(void);
+	std::string getLastErrorMessage();
+	std::string getLastDebugMessage();
+	
+};
+	}
+}

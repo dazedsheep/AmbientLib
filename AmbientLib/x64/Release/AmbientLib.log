@@ -1,0 +1,187 @@
+﻿Der Buildvorgang wurde am 24.10.2011 09:58:53 gestartet.
+     1>Projekt "C:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\AmbientLib.vcxproj" auf Knoten "2", build Ziel(e).
+     1>PrepareForBuild:
+         Das Verzeichnis "C:\Users\Mauke\Documents\Diplomarbeit\ambientLib\x64\Release\" wird erstellt.
+       InitializeBuildStatus:
+         "x64\Release\AmbientLib.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\\ /IC:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\\include /Zi /nologo /W3 /WX- /O2 /Oi /Ot /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D __AMBX__ /D USE_ASM_MMX_SIMD_64 /D BENJAMIN_SECURE_IMPL /D _EXPORT_ /D _AFX_NO_OLE_SUPPORT /D _AFX_NO_DB_SUPPORT /D _AFX_NO_DAO_SUPPORT /D _AFX_NO_AFXCMN_SUPPORT /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Release\AmbientLib.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp /MD 
+     1>cl : Befehlszeile warning D9025: "/MT" wird durch "/MD" überschrieben
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\\ /IC:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\\include /Zi /nologo /W3 /WX- /O2 /Oi /Ot /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D __AMBX__ /D USE_ASM_MMX_SIMD_64 /D BENJAMIN_SECURE_IMPL /D _EXPORT_ /D _AFX_NO_OLE_SUPPORT /D _AFX_NO_DB_SUPPORT /D _AFX_NO_DAO_SUPPORT /D _AFX_NO_AFXCMN_SUPPORT /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Release\AmbientLib.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt AmbientLib.cpp Classification.cpp clusteringCalculation.cpp colorAlgorithm.cpp cpuFeatures.cpp DebugAmbientLib.cpp DeviceContext.cpp DeviceInterface.cpp Element.cpp httpConnector.cpp HTTPRequest.cpp HTTPResponse.cpp Libxml.cpp limitedFunction.cpp PreReader.cpp ScreenSplitter.cpp SEMhttp.cpp Utils.cpp workerPool.cpp /MD 
+     1>cl : Befehlszeile warning D9025: "/MT" wird durch "/MD" überschrieben
+         AmbientLib.cpp
+     1>AmbientLib.cpp(97): warning C4267: '=': Konvertierung von 'size_t' nach 'unsigned int', Datenverlust möglich
+         Classification.cpp
+         clusteringCalculation.cpp
+         colorAlgorithm.cpp
+     1>colorAlgorithm.cpp(111): error C4235: Nicht dem Standard entsprechende Erweiterung: Das __asm-Schlüsselwort wird für diese Architektur nicht unterstützt.
+     1>colorAlgorithm.cpp(113): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(113): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(113): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(113): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'push'
+     1>colorAlgorithm.cpp(115): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(115): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ebx'
+     1>colorAlgorithm.cpp(115): error C2065: 'ebx': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(115): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'pxor'
+     1>colorAlgorithm.cpp(115): error C2065: 'pxor': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(115): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm0'
+     1>colorAlgorithm.cpp(115): error C2065: 'mm0': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(116): error C2065: 'mm0': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(116): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'pxor'
+     1>colorAlgorithm.cpp(116): error C2065: 'pxor': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(116): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm1'
+     1>colorAlgorithm.cpp(116): error C2065: 'mm1': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(117): error C2065: 'mm1': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(117): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'pxor'
+     1>colorAlgorithm.cpp(117): error C2065: 'pxor': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(117): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm2'
+     1>colorAlgorithm.cpp(117): error C2065: 'mm2': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(118): error C2065: 'mm2': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(118): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'pxor'
+     1>colorAlgorithm.cpp(118): error C2065: 'pxor': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(118): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm3'
+     1>colorAlgorithm.cpp(118): error C2065: 'mm3': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(119): error C2065: 'mm3': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(119): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'pxor'
+     1>colorAlgorithm.cpp(119): error C2065: 'pxor': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(119): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm4'
+     1>colorAlgorithm.cpp(119): error C2065: 'mm4': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(121): error C2065: 'mm4': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(121): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mov'
+     1>colorAlgorithm.cpp(121): error C2065: 'mov': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(121): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(121): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(122): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'add'
+     1>colorAlgorithm.cpp(122): error C2065: 'add': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(122): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(122): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(123): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'movd'
+     1>colorAlgorithm.cpp(123): error C2065: 'movd': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(123): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm1'
+     1>colorAlgorithm.cpp(123): error C2065: 'mm1': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(123): error C2065: 'dword': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(123): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ptr'
+     1>colorAlgorithm.cpp(123): error C2955: "ptr": Für die Verwendung der template-Klasse ist eine template-Argumentliste erforderlich.
+                 c:\users\mauke\documents\diplomarbeit\ambientlib\ambientlib\ptr.h(58): Siehe Deklaration von 'ptr'
+     1>colorAlgorithm.cpp(123): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(124): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'add'
+     1>colorAlgorithm.cpp(124): error C2065: 'add': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(124): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(124): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(125): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'movd'
+     1>colorAlgorithm.cpp(125): error C2065: 'movd': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(125): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm2'
+     1>colorAlgorithm.cpp(125): error C2065: 'mm2': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(125): error C2065: 'dword': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(125): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ptr'
+     1>colorAlgorithm.cpp(125): error C2955: "ptr": Für die Verwendung der template-Klasse ist eine template-Argumentliste erforderlich.
+                 c:\users\mauke\documents\diplomarbeit\ambientlib\ambientlib\ptr.h(58): Siehe Deklaration von 'ptr'
+     1>colorAlgorithm.cpp(125): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(126): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'add'
+     1>colorAlgorithm.cpp(126): error C2065: 'add': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(126): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(126): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(127): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'movd'
+     1>colorAlgorithm.cpp(127): error C2065: 'movd': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(127): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm3'
+     1>colorAlgorithm.cpp(127): error C2065: 'mm3': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(127): error C2065: 'dword': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(127): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ptr'
+     1>colorAlgorithm.cpp(127): error C2955: "ptr": Für die Verwendung der template-Klasse ist eine template-Argumentliste erforderlich.
+                 c:\users\mauke\documents\diplomarbeit\ambientlib\ambientlib\ptr.h(58): Siehe Deklaration von 'ptr'
+     1>colorAlgorithm.cpp(127): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(128): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'add'
+     1>colorAlgorithm.cpp(128): error C2065: 'add': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(128): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>colorAlgorithm.cpp(128): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(129): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'movd'
+     1>colorAlgorithm.cpp(129): error C2065: 'movd': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(129): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm4'
+     1>colorAlgorithm.cpp(129): error C2065: 'mm4': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(129): error C2065: 'dword': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(129): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ptr'
+     1>colorAlgorithm.cpp(129): error C2955: "ptr": Für die Verwendung der template-Klasse ist eine template-Argumentliste erforderlich.
+                 c:\users\mauke\documents\diplomarbeit\ambientlib\ambientlib\ptr.h(58): Siehe Deklaration von 'ptr'
+     1>colorAlgorithm.cpp(129): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(132): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'punpcklbw'
+     1>colorAlgorithm.cpp(132): error C2065: 'punpcklbw': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(132): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm1'
+     1>colorAlgorithm.cpp(132): error C2065: 'mm1': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(133): error C2065: 'mm0': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(133): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'punpcklbw'
+     1>colorAlgorithm.cpp(133): error C2065: 'punpcklbw': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(133): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm2'
+     1>colorAlgorithm.cpp(133): error C2065: 'mm2': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(134): error C2065: 'mm0': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(134): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'punpcklbw'
+     1>colorAlgorithm.cpp(134): error C2065: 'punpcklbw': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(134): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mm3'
+     1>colorAlgorithm.cpp(134): error C2065: 'mm3': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(135): error C2065: 'mm0': nichtdeklarierter Bezeichner
+     1>colorAlgorithm.cpp(135): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'punpcklbw'
+     1>colorAlgorithm.cpp(135): fatal error C1003: Mehr als 100 Fehler gefunden; Kompilierung wird abgebrochen.
+         cpuFeatures.cpp
+     1>cpuFeatures.cpp(17): error C4235: Nicht dem Standard entsprechende Erweiterung: Das __asm-Schlüsselwort wird für diese Architektur nicht unterstützt.
+     1>cpuFeatures.cpp(20): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(20): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ebx'
+     1>cpuFeatures.cpp(20): error C2065: 'ebx': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(20): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'push'
+     1>cpuFeatures.cpp(21): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(21): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'ecx'
+     1>cpuFeatures.cpp(21): error C2065: 'ecx': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(21): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'push'
+     1>cpuFeatures.cpp(22): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(22): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'edx'
+     1>cpuFeatures.cpp(22): error C2065: 'edx': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(22): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'push'
+     1>cpuFeatures.cpp(24): error C2065: 'push': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(24): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'edi'
+     1>cpuFeatures.cpp(24): error C2065: 'edi': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(24): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mov'
+     1>cpuFeatures.cpp(24): error C2065: 'mov': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(24): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'edi'
+     1>cpuFeatures.cpp(24): error C2065: 'edi': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(26): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'mov'
+     1>cpuFeatures.cpp(26): error C2065: 'mov': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(26): error C2146: Syntaxfehler: Fehlendes ';' vor Bezeichner 'eax'
+     1>cpuFeatures.cpp(26): error C2065: 'eax': nichtdeklarierter Bezeichner
+     1>cpuFeatures.cpp(26): error C3481: "edi": Es wurde keine Lambdaerfassungsvariable gefunden.
+     1>cpuFeatures.cpp(27): error C2061: Syntaxfehler: Bezeichner 'mov'
+     1>cpuFeatures.cpp(53): warning C4573: Für die Syntax von "AmbientLib::CPU::cpuFeatures::reg" muss der Compiler "this" erfassen, der aktuelle Standarderfassungsmodus lässt dies jedoch nicht zu.
+         DebugAmbientLib.cpp
+         DeviceContext.cpp
+     1>DeviceContext.cpp(119): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117): Siehe Deklaration von 'getcwd'
+     1>DeviceContext.cpp(198): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>DeviceContext.cpp(257): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117): Siehe Deklaration von 'getcwd'
+     1>DeviceContext.cpp(340): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>DeviceContext.cpp(400): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getcwd. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\direct.h(117): Siehe Deklaration von 'getcwd'
+     1>DeviceContext.cpp(480): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+         DeviceInterface.cpp
+         Element.cpp
+         httpConnector.cpp
+     1>httpConnector.cpp(201): warning C4267: 'Initialisierung': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+         HTTPRequest.cpp
+         HTTPResponse.cpp
+         Libxml.cpp
+     1>Libxml.cpp(31): warning C4267: 'Initialisierung': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>Libxml.cpp(59): warning C4267: '=': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>Libxml.cpp(68): warning C4267: '=': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>Libxml.cpp(189): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+         limitedFunction.cpp
+         PreReader.cpp
+         ScreenSplitter.cpp
+         SEMhttp.cpp
+     1>SEMhttp.cpp(204): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+     1>SEMhttp.cpp(214): warning C4267: 'Argument': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+         Utils.cpp
+     1>Utils.cpp(66): warning C4267: '=': Konvertierung von 'size_t' nach 'int', Datenverlust möglich
+         workerPool.cpp
+     1>Die Erstellung des Projekts "C:\Users\Mauke\Documents\Diplomarbeit\ambientLib\AmbientLib\AmbientLib.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+
+Fehler beim Erstellen
+
+Verstrichene Zeit 00:00:06.45

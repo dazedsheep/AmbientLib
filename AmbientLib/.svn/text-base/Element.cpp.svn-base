@@ -1,0 +1,75 @@
+#include "stdafx.h"
+#include "Element.h"
+
+Element::Element() 
+{
+	l_time = -1.0;
+	i_type = 0;
+	played_time = -1.0f;
+}
+
+Element::~Element()
+{
+
+}
+
+void Element::setPlayedTime(double time)
+{
+	played_time = time;
+}
+
+double Element::getPlayedTime()
+{
+	return played_time;
+}
+
+std::string Element::getValue(std::string identifier)
+{
+	std::map<std::string, std::string>::const_iterator foundElement;
+
+	foundElement = m_value.find(identifier);
+	if (foundElement != m_value.end())
+		return foundElement->second;
+	else
+		return "";
+}
+
+std::map<std::string, std::string> Element::getValues()
+{
+	return m_value;
+}
+
+void Element::addValue(std::string identifier, std::string value)
+{
+	m_value[identifier] = value;
+}
+
+double Element::getTime() const
+{
+	return l_time;
+}
+
+void Element::setTime(double time)
+{
+	l_time = time;
+}
+
+void Element::setType(int type)
+{
+	i_type = type;
+}
+
+int Element::getType()
+{
+	return i_type;
+}
+
+void Element::print()
+{
+	printf("type: %i\ntime: %f\n", i_type, l_time);
+	for (std::map<std::string, std::string>::const_iterator it = m_value.begin(); it != m_value.end(); ++it)
+		std::cout << it->first << ":" << it->second << ";  ";
+
+	std::cout << std::endl;
+}
+

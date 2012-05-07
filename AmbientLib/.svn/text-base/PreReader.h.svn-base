@@ -1,0 +1,25 @@
+#ifndef PREREADER_H
+#define PREREADER_H
+
+#include <vector>
+#include <string>
+#include "Element.h"
+#include "Classification.h"
+
+class PreReader
+{
+private:
+	Classification classification;
+	long m_timeScale;
+	Element *m_tmpElement;
+	void streamFile(const char *filename);
+	std::vector<Element*> *m_Elements;
+
+public:
+	PreReader();
+	~PreReader();
+	std::vector<Element*> parse(const char* filename);
+	long getTimeScale();
+};
+
+#endif

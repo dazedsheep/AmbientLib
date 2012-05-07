@@ -1,0 +1,31 @@
+
+#ifndef ELEMENT_H
+#define ELEMENT_H
+
+#include <map>
+#include <string>
+#include <iostream>
+
+class Element
+{
+private:
+	std::map<std::string, std::string> m_value;
+	int i_type;
+	double l_time;
+	double played_time;
+public:
+	Element();
+	~Element();
+	std::map<std::string, std::string> getValues();
+	std::string getValue(std::string identifier);
+	void addValue(std::string identifier, std::string value);
+	double getTime() const;
+	void setTime(double time);
+	void setPlayedTime(double time);
+	double getPlayedTime();
+	void print();
+	void setType(int type);
+	int getType();
+};
+
+#endif

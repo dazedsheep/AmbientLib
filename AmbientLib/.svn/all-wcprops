@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/mpegrose/!svn/ver/377/branches/AmbientLib/AmbientLib
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/mpegrose/!svn/ver/362/branches/AmbientLib/AmbientLib/stdafx.h
+END
+Element.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/mpegrose/!svn/ver/338/branches/AmbientLib/AmbientLib/Element.h
+END
+clusteringCalculation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/479/branches/AmbientLib/AmbientLib/clusteringCalculation.cpp
+END
+Utils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/mpegrose/!svn/ver/369/branches/AmbientLib/AmbientLib/Utils.cpp
+END
+limitedFunction.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/mpegrose/!svn/ver/425/branches/AmbientLib/AmbientLib/limitedFunction.h
+END
+HTTPResponse.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/282/branches/AmbientLib/AmbientLib/HTTPResponse.h
+END
+workerPool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/workerPool.cpp
+END
+amBXErrorHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/amBXErrorHandler.h
+END
+targetver.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/mpegrose/!svn/ver/309/branches/AmbientLib/AmbientLib/targetver.h
+END
+DeviceContext.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/DeviceContext.h
+END
+AmbientLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/AmbientLib.h
+END
+ScreenSplitter.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/479/branches/AmbientLib/AmbientLib/ScreenSplitter.h
+END
+DebugAmbientLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/mpegrose/!svn/ver/428/branches/AmbientLib/AmbientLib/DebugAmbientLib.cpp
+END
+PreReader.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/mpegrose/!svn/ver/258/branches/AmbientLib/AmbientLib/PreReader.h
+END
+iconv.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/iconv.h
+END
+colorAlgorithm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/colorAlgorithm.cpp
+END
+DeviceInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/DeviceInterface.h
+END
+cpuFeatures.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/286/branches/AmbientLib/AmbientLib/cpuFeatures.cpp
+END
+AmbientLib.rc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/AmbientLib.rc
+END
+Element.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/mpegrose/!svn/ver/338/branches/AmbientLib/AmbientLib/Element.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/stdafx.cpp
+END
+SEMhttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/mpegrose/!svn/ver/403/branches/AmbientLib/AmbientLib/SEMhttp.h
+END
+Libxml.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/mpegrose/!svn/ver/288/branches/AmbientLib/AmbientLib/Libxml.h
+END
+HTTPRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/mpegrose/!svn/ver/330/branches/AmbientLib/AmbientLib/HTTPRequest.h
+END
+limitedFunction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/mpegrose/!svn/ver/428/branches/AmbientLib/AmbientLib/limitedFunction.cpp
+END
+HTTPResponse.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/277/branches/AmbientLib/AmbientLib/HTTPResponse.cpp
+END
+HTTPConnector.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/279/branches/AmbientLib/AmbientLib/HTTPConnector.h
+END
+Classification.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/353/branches/AmbientLib/AmbientLib/Classification.h
+END
+clusteringCalculation.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/mpegrose/!svn/ver/428/branches/AmbientLib/AmbientLib/clusteringCalculation.h
+END
+DeviceContext.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/DeviceContext.cpp
+END
+Utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/Utils.h
+END
+typedef.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/typedef.h
+END
+AmbientLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/AmbientLib.cpp
+END
+ScreenSplitter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/mpegrose/!svn/ver/502/branches/AmbientLib/AmbientLib/ScreenSplitter.cpp
+END
+AmbientLib.aps
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/AmbientLib.aps
+END
+workerPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/mpegrose/!svn/ver/356/branches/AmbientLib/AmbientLib/workerPool.h
+END
+PreReader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/mpegrose/!svn/ver/338/branches/AmbientLib/AmbientLib/PreReader.cpp
+END
+ptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/ptr.h
+END
+threading.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/threading.h
+END
+AmbientLib.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/AmbientLib.vcxproj
+END
+DeviceInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/mpegrose/!svn/ver/377/branches/AmbientLib/AmbientLib/DeviceInterface.cpp
+END
+DebugAmbientLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/mpegrose/!svn/ver/428/branches/AmbientLib/AmbientLib/DebugAmbientLib.h
+END
+AmbientLib.def
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/AmbientLib.def
+END
+SEMhttp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/mpegrose/!svn/ver/587/branches/AmbientLib/AmbientLib/SEMhttp.cpp
+END
+AmbientLib.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/425/branches/AmbientLib/AmbientLib/AmbientLib.vcxproj.filters
+END
+Libxml.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/mpegrose/!svn/ver/353/branches/AmbientLib/AmbientLib/Libxml.cpp
+END
+HTTPRequest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/275/branches/AmbientLib/AmbientLib/HTTPRequest.cpp
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/ReadMe.txt
+END
+colorAlgorithm.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/330/branches/AmbientLib/AmbientLib/colorAlgorithm.h
+END
+httpConnector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/mpegrose/!svn/ver/403/branches/AmbientLib/AmbientLib/httpConnector.cpp
+END
+Classification.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/mpegrose/!svn/ver/353/branches/AmbientLib/AmbientLib/Classification.cpp
+END
+cpuFeatures.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/mpegrose/!svn/ver/264/branches/AmbientLib/AmbientLib/cpuFeatures.h
+END
+AmbientLib.vcxproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/AmbientLib.vcxproj.user
+END
+Resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/Resource.h
+END

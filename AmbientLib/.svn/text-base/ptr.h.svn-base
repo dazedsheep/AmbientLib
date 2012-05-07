@@ -1,0 +1,131 @@
+/*
+ *
+ *	Simple smart pointers. Written by Benjamin Rainer (C) 2010-2011
+ *
+ *
+ *  Extend this class to your favor, add ref count and so on ...
+ */
+
+
+#ifndef _PTR_H_
+#define _PTR_H_
+
+class smartPointerException
+{
+
+};
+
+class smartPointerRefCountException : public smartPointerException
+{
+
+
+};
+
+class smartPointerNULLPointerException : public smartPointerException
+{
+
+};
+
+template<class T> class scoped_ptr
+{
+private:
+	T *pn;
+public:
+	scoped_ptr() : pn(0) {};
+	~scoped_ptr() {
+		delete pn;
+	}
+	template<class Y> explicit scoped_ptr(Y *in)
+	{
+		pn = (T *) in;
+	};
+	
+	T *operator->()
+	{
+		return pn;
+	};
+
+	T *get_pointer()
+	{
+		return pn;
+	};
+
+	scoped_ptr & operator=(scoped_ptr &p)
+	{
+		this->pn = p.get_pointer();
+		return *this;
+	};
+
+	scoped_ptr & operator=(T *p)
+	{
+		this->pn = p;
+		return *this;
+	};
+
+	T operator*()
+	{
+		return *this->pn;
+	};
+};
+
+
+template<class T> class ptr
+{
+private:
+
+	T *pn;
+	unsigned int count;
+public:
+
+	ptr() : pn(0), count(0){
+
+	};
+	~ptr() {
+
+		if(count > 0) throw smartPointerRefCountException();
+		// what happens when we are deleted and there still remains a pointer to an object ...
+		// this can be handled the strict way of throwing an exception or we are very kindly 
+	}
+
+	template<class Y>  explicit ptr(Y *in){	
+	 if(in == NULL) throw smartPointerNULLPointerException();	
+	 pn = (T *)in;	
+	};
+
+	T *operator ->() {
+		return pn;
+	};
+
+	T *get_pointer(){
+
+		return pn;
+	};
+
+	ptr & operator=(ptr &p){
+		
+		this->pn = p.get_pointer();
+		return *this;
+	};
+
+	ptr & operator=(T *p){
+
+		this->pn = p;
+		return *this;
+	};
+
+	T operator*(){
+
+		return *this->pn;
+	};
+
+	void addRef() { ++count;}
+
+	void decRef() { if (count > 0) --count; else throw smartPointerRefCountException(); }
+
+	void release() { if (pn == NULL) throw smartPointerNULLPointerException(); else delete pn;}
+
+	void unbind() { if (pn == NULL) throw smartPointerNULLPointerException(); else pn = NULL; }
+	
+};
+
+#endif

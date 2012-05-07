@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver
+END
+debug-device-driver.rc
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debug-device-driver.rc
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/stdafx.h
+END
+debug-device-driver.vcxproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debug-device-driver.vcxproj.user
+END
+Fan.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/Fan.cpp
+END
+debugInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debugInterface.cpp
+END
+targetver.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/targetver.h
+END
+Fan.h
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/Fan.h
+END
+entry_point.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/entry_point.cpp
+END
+debugInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debugInterface.h
+END
+debug-device-driver.aps
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debug-device-driver.aps
+END
+AmBXLocationMap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/AmBXLocationMap.cpp
+END
+logger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/logger.cpp
+END
+AmBXLocationMap.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/AmBXLocationMap.h
+END
+logger.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/logger.h
+END
+debug-device-driver.vcxproj
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debug-device-driver.vcxproj
+END
+Rumble.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/Rumble.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/stdafx.cpp
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/ReadMe.txt
+END
+Rumble.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/Rumble.h
+END
+debug-device-driver.vcxproj.filters
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/debug-device-driver.vcxproj.filters
+END
+Resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/588/branches/AmbientLib/debug-device-driver/debug-device-driver/debug-device-driver/Resource.h
+END

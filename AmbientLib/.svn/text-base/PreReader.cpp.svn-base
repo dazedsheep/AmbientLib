@@ -1,0 +1,89 @@
+/*
+ * Markus Waltl (2009-2011)
+ * Copyright Alpen-Adria-Universitaet Klagenfurt
+ */
+#include "stdafx.h"
+#include <stdio.h>
+#include <iostream>
+#include <fstream>
+#include "PreReader.h"
+#include "typedef.h"
+
+PreReader::PreReader()
+{
+	m_Elements = new std::vector<Element*>();
+	m_timeScale = 1;
+	m_tmpElement = NULL;
+}
+
+PreReader::~PreReader()
+{
+	if (m_Elements != NULL)
+	{
+		delete m_Elements;
+		m_Elements = NULL;
+	}
+}
+
+std::vector<Element*> PreReader::parse(const char* filename)
+{
+    streamFile(filename);
+
+    return *m_Elements;
+}
+
+void PreReader::streamFile(const char *filename) {
+
+	std::ifstream infile(filename);
+	if (!infile.bad())
+	{
+		char line[1024];
+		while(infile.getline(line, 1024))
+		{
+			char* ch = 0;
+			if ((ch = strchr(line, '=')) != NULL)
+			{
+				int pos = (int)(ch - line);
+				std::string tmpString = line;
+
+				std::string domain = tmpString.substr(0, pos);
+				std::string range = tmpString.substr(pos+1, tmpString.length());
+
+				if (strcmp(domain.c_str(), "PTS") == 0)
+				{
+					long int lVal = atol(range.c_str());
+					m_timeScale = lVal;
+				}
+				else
+				{
+					if (m_tmpElement == NULL)
+					{
+						m_tmpElement = new Element();
+						m_tmpElement->setPlayedTime(-1.0);
+					}
+					long int lVal = atol(domain.c_str());
+					char buffer[1024];
+					sprintf_s(buffer, "%.1f", ( lVal / (double)m_timeScale ));
+					m_tmpElement->setTime(atof(buffer));
+					m_tmpElement->setType(TYPE_LIGHT);
+					m_tmpElement->addValue(ATT_GEN_ACTIVATE, SEMP_TRUE);
+					m_tmpElement->addValue(ATT_GEN_LOCATION, Classification::LOCATIONURIBASE + Classification::LOC_EVERYWHERE);
+					m_tmpElement->addValue(ATT_LIGHT_COLOR, range.c_str());
+
+					if (m_tmpElement != NULL)
+					{
+						m_Elements->push_back(m_tmpElement);
+						m_tmpElement = NULL;
+					}
+				}
+			}
+		}
+	}
+	else
+		fprintf(stderr, "Unable to open %s\n", filename);
+}
+
+long PreReader::getTimeScale()
+{
+	return m_timeScale;
+}

@@ -1,0 +1,87 @@
+/*
+ *
+ * Abstract class for the device interface, if an device driver doesn't implements all function we reffer to this
+ *
+ */
+#include "stdafx.h"
+#include <iostream>
+#include <vector>
+#include <Windows.h>
+#include "Element.h"
+#include "ptr.h"
+#include "DeviceInterface.h"
+
+bool DeviceInterface::playEffect(Element e)
+{
+	return false;
+}
+
+bool DeviceInterface::playEffectAtTime(double time)
+{
+	return false;
+}
+
+void DeviceInterface::colorToDevice(std::string loc, int r, int g, int b)
+{
+
+}
+
+std::string DeviceInterface::getErrorString()
+{
+	return std::string("NYI");
+}
+
+bool DeviceInterface::hasError()
+{
+	return false;
+}
+
+void DeviceInterface::clearError()
+{
+
+}
+
+void DeviceInterface::addEffect(Element *e)
+{
+}
+
+void DeviceInterface::addEffects(std::vector<Element *> elements)
+{
+
+}
+
+void DeviceInterface::getSupportedSensoryEffects(ptr<std::vector<int>> & vec)
+{
+}
+std::vector<std::string> DeviceInterface::getLocations(int SUPPORTED)
+{
+	return std::vector<std::string>();
+}
+
+void DeviceInterface::displayColor()
+{
+}
+
+void DeviceInterface::activateAllAvailableDevices(bool activate)
+{
+}
+
+void DeviceInterface::activateDevice(unsigned int DEVICE, bool activate)
+{
+
+}
+
+void DeviceInterface::activateAutoColor(bool activate)
+{
+}
+
+void DeviceInterface::setVideoLength(double length)
+{
+
+}
+
+double DeviceInterface::getVideoLength()
+{
+	return -1.0;
+
+}

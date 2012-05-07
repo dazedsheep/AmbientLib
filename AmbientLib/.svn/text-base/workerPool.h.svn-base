@@ -1,0 +1,44 @@
+#pragma once
+
+namespace AmbientLib 
+{
+
+typedef struct workerParam_t{
+
+	HANDLE myHandle;
+	unsigned int threadID;		// the number of the thread
+	unsigned int workers;		// the number of workers within this worker pool
+	HANDLE threadMutex;			// for causing wait situations
+	HANDLE threadEvent;			// for signaling that the worker should do it's work
+	HANDLE workerIsWorking;		// for signaling that we are working ...
+	HANDLE workerFinished;		// event for signaling that the worker is done
+	bool running;
+	bool synchronized;
+	void *threadData;
+	(int)(*threadFunc)(void *params, workerParam_t *wParam);
+
+
+}workerParam;
+
+
+class workerPool
+{
+private:
+	DWORD *threadIDs;
+	unsigned int workers;
+	workerParam *wParam;
+	HANDLE *threads;
+	HANDLE poolMutex;
+	HANDLE *threadsReady;
+	bool running;
+public:
+	workerPool(void);
+	workerPool(unsigned int workers);
+	~workerPool(void);
+
+	static DWORD worker(LPVOID *params);
+	int attachAndWait(void *threadFunc,void *params);
+	int attach(void *threadFunc, void *params);
+};
+typedef int (*ThreadFunction)(void *params,workerParam *wParam);
+}

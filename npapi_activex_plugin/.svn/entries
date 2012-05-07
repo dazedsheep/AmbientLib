@@ -1,0 +1,47 @@
+10
+
+dir
+418
+https://svn-itec.uni-klu.ac.at/repos/mpegrose/branches/AmbientLib/npapi_activex_plugin
+https://svn-itec.uni-klu.ac.at/repos/mpegrose
+
+
+
+2011-05-31T11:56:50.414803Z
+418
+b3rainer
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+acbebbf2-4a47-0410-91a1-b0ac0db4e9e4
+
+
+
+
+
+
+
+
+((conflict firebreath dir update edited deleted (version https://svn-itec.uni-klu.ac.at/repos/mpegrose 3 418 branches/AmbientLib/npapi_activex_plugin/firebreath none) (version https://svn-itec.uni-klu.ac.at/repos/mpegrose 3 433 branches/AmbientLib/npapi_activex_plugin/firebreath dir)))
+
+firebreath
+dir
+
+
+
+delete
+
+firebreath-1.5.2
+dir
+

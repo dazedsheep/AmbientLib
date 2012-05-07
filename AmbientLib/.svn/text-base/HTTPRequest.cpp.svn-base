@@ -1,0 +1,60 @@
+/*
+ *
+ * TODO: other HTTP methods like OPTIONS, POST, ...
+ *
+ */
+
+
+#include "StdAfx.h"
+#include <iostream>
+#include <vector>
+#include <WinSock.h>
+#include "ptr.h"
+#include "HTTPRequest.h"
+#include "HTTPConnector.h"
+
+using namespace AmbientLib::HTTP;
+
+HTTPRequest::HTTPRequest(std::string method, std::string url, std::string host)
+{
+	request = "";
+	// create the http request according to the specified method
+
+	if(method.compare("GET")==0){
+
+		// create the GET request
+		
+		request.append(method);
+		request.append(" ");
+		request.append(url);
+		request.append(" ");
+		request.append(HTTP_VERSION);
+		request.append(HTTP_CRLF);
+		request.append(HTTP_HOST);
+		request.append(" ");
+		request.append(host);
+		request.append(HTTP_CRLF);
+		// now the connection state and which types we accept + user agent
+		request.append(HTTP_USER_AGENT);
+		request.append(HTTP_CRLF);
+		request.append(HTTP_ACCEPT);
+		request.append(HTTP_CRLF);
+		request.append(HTTP_KEEP_ALIVE);
+		request.append(HTTP_CRLF);
+		request.append(HTTP_CONNECTION_STATE);
+		request.append(HTTP_CRLF);
+		request.append(HTTP_CRLF);
+	}
+
+}
+
+
+HTTPRequest::~HTTPRequest(void)
+{
+	
+}
+
+std::string HTTPRequest::getRequest()
+{
+	return request;
+}

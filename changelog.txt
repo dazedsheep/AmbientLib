@@ -1,0 +1,255 @@
+11.11.2011 (Benjamin)
+----------------------
+*Fixed a bug, where WinHTTP caused a Runtime Error
+*Added Proxy autodetection
+*Improved stability of the library
+
+08.11.2011 (Benjamin)
+----------------------
+* Fixed a error with the Google Chrome extension, where it refused to render light effects when no SEM-Server was given.
+
+24.10.2011 (Benjamin)
+----------------------
+* Added Tool to configure Ambient Library, this includes:
+  - Checks whether the AmbientLib is installed correctly and shows the version of AmbientLib and the Web Browser Plugin
+  - Allows to enable/disable installed device drivers
+
+* Added Debug Device Driver with simulation window, showing all nine light locations, wind and vibration
+  - With this driver everyone can use the AmbientLib, just open the configuration tool and check the Debug Device Driver and uncheck the amBX driver
+
+* Hoooray! Hooray! Horay!
+
+20.10.2011 - 21.10.2011 (Benjamin)
+----------------------
+* Installer now asks everytime for admin rights to install.
+* The folder where AmbientLib is installed now gets the right permissions, such that the Web Browser wouldn't have any problems loading the library.
+* Detailed Error Messages are given to the user, when something won't work or an error occurs...
+
+
+18.10.2011 (Benjamin)
+----------------------
+* Fixed a bug, where the mapping between pixel(x,y) and the screen location wasn't correct, when MMX was disabled.
+
+07.09.2011 (Benjamin)
+-----------------------
+* Fixed directory bug.
+  - In version 1.1.0.2 directory with spaces lead to a problem when loading the device driver list
+  - FIXED WITH VERSION 1.1.0.3
+
+08.06.2011 (Benjamin)
+-----------------------
+* Extended clustering calculation for vibrations
+
+01.06.2011 - 07.06.2011 (Benjamin)
+-----------------------
+* Added clustering calculation for SEMs
+* SEMs are parsed, the function for wind and vibration is calculated and appropriate parameters are calculated like:
+ - Average intensity
+ - Average change in intensity
+ - The number of intensity changes
+ - Peak intensity
+
+30.05.2011 - 31.05.2011 (Benjamin)
+-----------------------
+* New plugin version, with FireBreath 1.5, this fixes the bug with Internet Explorer, where a <!DOCTYPE> tag caused the plugin to crash...
+* Found a new bug in IE9, internet explorer 9 doesn't let the activeX add-on open external files, the plugin needs extended rights...
+* New release of IE9 should fix this bug
+* Source of the npapi plugin is now available
+* Speeded up auto color calculation
+
+10.05.2011 - 19.05.2011 (Benjamin)
+-----------------------
+* HTTP Client now supports HTTPS with SSL and TSL and even with invalid certificates... (this took me hours to figure out..., that Winhttp is really pissed when you have invalid certificates...)
+* All browser should now seamlessly work except Internet Explorer
+
+06.05.2011 (Markus)
+-----------------------
+* merged current version with SEMP version
+* fixed bug with not starting fan
+
+01.05.2011 - 05.05.2011
+-----------------------
+* Fixed bugs that caused problems with playing effects
+
+29.04.2011 - 30.04.2011 (Benjamin)
+--------------------
+* Changed fading of wind and vibration in amBXContext, fading is now based on time, works a lot better and on different update intervals
+
+28.04.2011 (Benjamin)
+--------------------
+* Changed playEffectAtTime in amBX-Context, already played effects will not be played again, except the user rewinds the movie
+
+21.04.2011 (Benjamin)
+--------------------
+* Added worker pool to colorAlgorithm
+* Now the average color algorithm scales better with the CPU(s)
+* Lowered the CPU usage to 7% in average
+
+19.04.2011 (Benjamin)
+--------------------
+* Introduced worker pool to enhance scalability of threaded algorithms
+
+06.04.2011 (Benjamin)
+--------------------
+* The library will now first look for the device drivers in the working directory and if there are no device drivers, it'll fetch the environment variable AMBIENT and will load the device drivers from the install path.
+* Reduced the functionality of the DeviceInterface to reflect only important functions/methods
+* Fixed a Bug where BGR/RGB colors weren't correctly calculated
+* Set the minimum windows version to WINXP.
+* Updated README-HOWTO and HOWTO-DEVICE_DRIVERS
+
+31.03.2011 to 05.04.2011 (Benjamin)
+--------------------
+* Fixed a BUG, where too slow calculation could lead to an exception
+* Added BGRA average color calculation to colorAlgorithm
+* Added support for Flash:
++ Ambient works now on Google Chrome, Safari, Firefox,...
++ The plugin grabs now the handle of the embedded Flash Plugin and captures the drawing area
+* The new functionality needs to be tested on various Windows versions.
+
+Known Issues:
+I Fullscreen won't work with HTML5 and Flash, because the browser seems to create an overlay and suspends all activities on Plugins/Javascript.
+
+Performance improvements:
+* I've encounterd various performance issues related with the HTML5 Video element. It seems that Flash plays movies a lot smoother than the HTML5 Video Element (especially in higher resolutions 720p/1080p).
+
+
+30.03.2011 (Benjamin)
+---------------------
+* Improved performance of plugin, no more hickups caused by the plugin.
+* Tested extensions on various browser, Issue List:
+
+Google Chrome 12 & Safari:
+
+It seems that the WebKit based browser have a problem in their Security Manager, which doesn't allow file acces.
+In detail this means that we can't cross access the injected canvas element. --allow-access-from-files doesn't work... ISSUE is open on Google Chrome
+
+
+Opera 11.10:
+
+Opera behaves very strange, their may be a bug according to my hardware but everytime I try to access a canvas element Opera crashes.
+This behavior can be caused by a lot of things. May be it's correlated with the rendering engine and my hardware.
+
+
+IE9: 
+
+Extension in development.
+
+
+Firefox 4:
+
+Works just fine. Without any errors caused by the browser.
+
+
+25.03.2011 (Benjamin)
+---------------------
+* Fixed a few Bugs, which could cause problems on Windows XP
+* Added activateAllDevices(bool activate) to Ambient, to switch off/on all devices registered
+* Markus Waltl was so kind and tested the library + plugin + firefox extension on Windows XP
+* Improved accuracy of color calculation
+* Known ISSUES:
+I When a video ends the devices aren't correctly disabled
+I-F The setup couldn't register the plugin (npambient.dll) (FIXED), added vc++ redist 2010 to installer
+I Only one instance is playing effects if there are more instances of Ambient running (FCFS, FIX ?!)
+I Ambient library fails loading plugins when there are spacse in the path name of the environment variable
+I If the environment variable isn't there, the Ambient library crashes (FIX may be deployed on weekend) 
+I (only plugin) When a video is played in fullscreen the Ambient plugin crashes. But the plugin is not causing this problem.
+  It's in the nature how the browser handles the fullscreen mode of the video (May be fixed in a later version of the plugin)
+
+24.03.2011 (Benjamin)
+---------------------
+* Added HOWTO on device driver development.
+* Fixed a BUG where loading an empty SEM could lead to crashes.
+* Added new method to Ambient class isEffectsLoaded to verify if effects where loaded from an SEM.
+
+23.03.2011 (Benjamin)
+---------------------
+* Increased performance of HTTP Protocol and the underlaying TCP (from 5 secs down to ~500ms).
+* Added support for various types of device drivers
+* Fixed a BUG, where external programs may trigger unpleasant effects if there are no effects loaded.
+
+20.03.20011 & 21.03.2011 (Benjamin)
+---------------------
+* Fixed a lot of BUGS according to the playback of effects.
+* Updated amBX-Context.
+
+17.03.2011 & 18.03.2011 (Benjamin)
+---------------------
+* Colors are now claculated with the new screen splitter. If there are lights on the positions N,S,SE,SW,NW,NE,W,E then they will get the apropriate color
+C Tested new color calculation up to FULL HD(1080), calculation speed with MMX SIMD (AMD Phenom Quadcore 2.3GHZ) 28ms for a FULL HD video frame (@ one core is fully used)
+* Fixed a few BUGS in amBX-Context and changed some method names
+* Updated device interface to reflect new changes.
+* Change constructor of exported class, so it accepts width and height (needed for the screen splitter initialization)
+* Fixed a memory leak within DeviceContext.cpp, where the vector was not freed properly
+* Updated HOWTO
+
+16.03.2011 & 15.03.2011 (Benjamin)
+---------------------
+* Adapted the new EffectManager to the amBX-Context driver, (not yet fully done)
+* Added ScreenSplitter, which splits the video frame into N,S,SE,SW,NW,NE,W,E according to the standard (not yet tested)
+* Fixed a few internal bugs
+
+14.03.2011 (Benjamin)
+---------------------
+* Minor bug fixes
+* Introduced environment variable to identify where the lib is installed
+
+13.03.2011 (Benjamin)
+---------------------
+* Deleted all references from AmbientLib to amBX, this is now the task of device drivers/wrappers/modules
+* Fixed a lot of bugs with the device context
+* USE /MD to compile ..., for usage of CRT. Otherwise use ptr<class> to hand over parameters to device drivers/wrappers.
+* Created amBX-Context driver/wrapper from the old source code of Markus Waltl to test if wrapper/driver/module system works
+* Tested SEM over http.
+
+12.03.2011 (Benjamin)
+---------------------
+* Added new abstraction, so we can support more devices than just amBX (see DeviceContext). The DeviceContext loads a csv file which states where the device plugins are.
+C This new abstraction allows us to develop device wrappers seperatley from the library.
+* Changed AmbientLib class to reflect loading of the apropriate device "driver". Now the old constructors are functions, the constructor is now only responsible for loading the device ...
+
+11.03.2011 (Benjamin)
+---------------------
+* Added new constructor to AmbientLib:Ambient(bool allowThreads,bool disableFateTime, std::string url, std::string SEMFile, bool directoryLookup)
+* Added HTTP functionality (basic download functionality, works nice)
+* Improved smart pointers
+* Changed libxml to accept a memory location for parsing the SEM
+
+10.03.2011 (Benjamin)
+---------------------
+* Fixed component calculation with MMX.
+* Colors are now component based.
+
+09.03.2011 (Benjamin)
+---------------------
+* Added all stubs for HTTP 1.1 implementation (incl. namespaces).
+* Added test application for the library. This application makes a perfomance,stability and functionality test.
+* Fixed Threading BUG within colorAlgorithm class, which was introduced when building the lib.
+* Added auto detection if MMX is supported by the CPU in colorAlgorithm.cpp, the colorAlgorithm will now select the apropriate calculation methods
+* Added DebugAmbient class, which acts as debuging class which is also exported
+* To make use of the debuging class just use DebugAmbientLib.h + AmbientLib.h
+* Added CPU feature detection
+* Added cpuFeatures class.
+
+08.03.2011 (Benjamin)
+---------------------
+* Changed EffectManager::double playEffectAtTime to EffectManager::bool playEffectAtTime, to reflect if a effect was played or not
+* Changed the ambient class.
+* Added preReader functionality.
+* Added activateEffects and disableEffects.
+* Added namespaces to some classes (NOT FULLY DONE)
+* Added auto color detection
+* Added README+HOWTO
+
+07.03.2011 (Benjamin)
+-------------------
+* introduced smart pointers, please use in future implementations ptr<CLASS> xx(pointer); xx->function/method/attrib...
+* changed CAmbientLibApp to Ambient
+* For importing the lib only the AmbientLib.h is required from now on ( needs testing )
+
+04.03.2011 (Markus)
+-------------------
+* minor modification in PreReader.cpp
+* removed MFC/ATL includes (not needed)
+* corrected settings for the project for compiling of every computer (path indipendent) (debug & release)
+* restructed folders and created a deployment folder
+* changed in AmbientLib _DEBUG to DEBUG else DEBUG_NEW will not be set in debug mode

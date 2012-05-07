@@ -1,0 +1,21 @@
+#ifndef __CLUSTERINGCALCULATION_H_
+#define __CLUSTERINGCALCULATION_H_
+
+class clusteringCalculation
+{
+private:
+	std::vector<Element *> elements;
+	std::vector<limitedFunction> functionWind;
+	std::vector<limitedFunction> functionVibration;
+	unsigned int length;
+public:
+	clusteringCalculation(const char *,unsigned int);
+	std::vector<limitedFunction> getWindFunction();
+	std::vector<limitedFunction> getVibrationFunction();
+	double getVariationOfFunction(std::vector<limitedFunction> &function);
+	double getPeakIntensity(std::vector<limitedFunction> &function);
+	void printWindFunction();
+	~clusteringCalculation(void);
+};
+
+#endif

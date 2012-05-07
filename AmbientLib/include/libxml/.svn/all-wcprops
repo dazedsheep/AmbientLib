@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml
+END
+xmlschemastypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlschemastypes.h
+END
+xmlwin32version.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlwin32version.h
+END
+nanohttp.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/nanohttp.h
+END
+parser.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/parser.h
+END
+xmlwriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlwriter.h
+END
+relaxng.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/relaxng.h
+END
+nanoftp.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/nanoftp.h
+END
+xmlversion.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlversion.h
+END
+debugXML.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/debugXML.h
+END
+xpointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xpointer.h
+END
+catalog.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/catalog.h
+END
+SAX2.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/SAX2.h
+END
+xmlsave.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlsave.h
+END
+HTMLparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/HTMLparser.h
+END
+dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/dict.h
+END
+hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/hash.h
+END
+xmlexports.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlexports.h
+END
+encoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/encoding.h
+END
+xmlmemory.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlmemory.h
+END
+threads.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/threads.h
+END
+SAX.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/SAX.h
+END
+xmlautomata.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlautomata.h
+END
+valid.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/valid.h
+END
+uri.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/uri.h
+END
+tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/tree.h
+END
+schematron.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/schematron.h
+END
+schemasInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/schemasInternals.h
+END
+xmlschemas.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlschemas.h
+END
+xpathInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xpathInternals.h
+END
+c14n.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/c14n.h
+END
+xmlmodule.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlmodule.h
+END
+xmlunicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlunicode.h
+END
+xmlerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlerror.h
+END
+chvalid.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/chvalid.h
+END
+xinclude.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xinclude.h
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/list.h
+END
+xmlregexp.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlregexp.h
+END
+parserInternals.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/parserInternals.h
+END
+pattern.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/pattern.h
+END
+globals.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/globals.h
+END
+xmlreader.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlreader.h
+END
+DOCBparser.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/DOCBparser.h
+END
+HTMLtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/HTMLtree.h
+END
+entities.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/entities.h
+END
+xpath.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xpath.h
+END
+xlink.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xlink.h
+END
+xmlstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlstring.h
+END
+xmlIO.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/include/libxml/xmlIO.h
+END

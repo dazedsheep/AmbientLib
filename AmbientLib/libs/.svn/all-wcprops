@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs
+END
+ambxrt.lib
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/ambxrt.lib
+END
+libxml2.dll
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/libxml2.dll
+END
+ambxrt.dll
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/ambxrt.dll
+END
+iconv.dll
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/iconv.dll
+END
+zlib1.dll
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/zlib1.dll
+END
+libxml2.lib
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/mpegrose/!svn/ver/247/branches/AmbientLib/AmbientLib/libs/libxml2.lib
+END
