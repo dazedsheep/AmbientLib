@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl
+END
+error.ipp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/error.ipp
+END
+write.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/write.hpp
+END
+read.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/read.hpp
+END
+serial_port_base.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/serial_port_base.hpp
+END
+serial_port_base.ipp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/serial_port_base.ipp
+END
+write_at.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/write_at.hpp
+END
+read_at.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/read_at.hpp
+END
+src.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/src.cpp
+END
+read_until.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/read_until.hpp
+END
+io_service.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/io_service.hpp
+END
+src.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/src.hpp
+END
+io_service.ipp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/asio/impl/io_service.ipp
+END

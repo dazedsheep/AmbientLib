@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates
+END
+FBControl.htm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/FBControl.htm
+END
+FBControl.rgs
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/FBControl.rgs
+END
+FireBreathWin.rgs
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/FireBreathWin.rgs
+END
+FireBreathWin.def
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/FireBreathWin.def
+END
+version_script.txt
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/version_script.txt
+END
+COM_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/COM_config.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/config.h
+END
+firebreathWin.rc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/firebreathWin.rc
+END
+axplugin_defs.inc
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/axplugin_defs.inc
+END
+FireBreathWin.idl
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/FireBreathWin.idl
+END
+ExportList_plugin.txt
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/ExportList_plugin.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/README.txt
+END
+rcgen.sh.in
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/rcgen.sh.in
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/resource.h
+END
+axplugin_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/gen_templates/axplugin_defs.h
+END

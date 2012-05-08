@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0013)about:internet -->
+<!-- The above comment makes IE treat this as a web page -->
+<html>
+<head>
+    <title>atl 8.0 test page for object fbcontrol</title>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/themes/base/jquery-ui.css" rel="Stylesheet" />
+    <style>
+
+        body
+        {
+            padding: 0;
+            margin: 0;
+        }
+    
+        .header 
+        {
+            text-align: center;
+            border: 1px solid black;
+            width: 900px;
+        }
+    
+        #pluginContainer
+        {
+            width: 300px;
+            height: 300px;
+            border: 5px dotted gray;
+            text-align: center;
+            margin: 0 auto;
+            float: left;
+        }
+    
+        #testResults
+        {
+            border: 1px dashed gray;
+            width: 600px;
+            height: 300px;
+            float: left;
+            overflow:auto;
+        }
+    
+        #testResults ul
+        {
+            border-bottom: 1px solid black;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    
+        #testResults ul li
+        {
+            padding-left: 1em;
+            color: Gray;
+        }
+    
+        #testResults ul li.passed
+        {
+            color: Green;
+        }
+
+        #testResults ul li.failed
+        {
+            color: Red;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <script type="text/javascript" language="Javascript">
+        var mimeType = "application/x-fbtestplugin";
+        var pluginCB = null;
+
+        function plugin() {
+            return document.getElementById("testPlugin");
+        }
+
+        function injectPlugin(dest, callback) {
+            pluginCB = callback;
+            var html = '<object id="testPlugin" type="' + mimeType + '" width="100%" height="100%" onload="alert(\'The plugin has loaded!\');">';
+            html += '<param name="onload" value="pluginCB" />';
+            html += '</object>';
+            dest[0].innerHTML = html;
+        }
+
+        function dangerousInjection(dest, callback) {
+            pluginCB = callback;
+            var paramNode = document.createElement("param");
+            paramNode.setAttribute("name", "onload");
+            paramNode.setAttribute("value", "pluginCB");
+            var pluginObjectNode = document.createElement("object");
+            pluginObjectNode.appendChild(paramNode);
+            pluginObjectNode.setAttribute("type", mimeType);
+            dest.appendChild(pluginObjectNode);
+        }
+
+        function addTest(id, text) {
+            $("#testResults ul")
+                .append("<li id='" + id + "'>" + text + "...</li>")
+            $("#" + id).attr("text", text);
+        }
+
+        function markPassed(id) {
+            var el = $("#" + id);
+            el.html(el.attr("text") + " passed!").addClass("passed").removeClass("failed");
+        }
+        function markFailed(id) {
+            var el = $("#" + id);
+            el.html(el.attr("text") + " failed!").addClass("failed").removeClass("passed");
+        }
+
+        function pageLoaded() {
+            addTest("loaded", "Plugin onload event");
+            addTest("valid", "Plugin valid test");
+            addTest("getPluginPath", "Get plugin path");
+            addTest("echo", "Plugin echo test");
+            addTest("reverse", "Plugin reverse test");
+            addTest("getMap", "Plugin return map test");
+            addTest("mathAPI", "Plugin return JSAPI object test");
+            addTest("location", "Get page location test");
+            addTest("mathApiAdd", "Use custom JSAPI coming in from script");
+            addTest("countArray", "Count array length returned from JSAPI object");
+            addTest("simpleFireEvent", "Simple event bind and fire test");
+            addTest("attachedFireEvent", "Simple event bind attach and fire test");
+            addTest("dialog", "Dialog callback test");
+            addTest("getURL", "Download stream (GET)");
+            addTest("postURL", "Download stream (POST)");
+            //addTest("dangerousInject", "Dangerous injection");
+            addTest("calltest", "Function.call method");
+            addTest("applytest", "Function.apply method");
+            markFailed("loaded");
+            injectPlugin($("#pluginContainer"), pluginLoaded);
+        }
+
+        function pluginLoaded() {
+            markPassed("loaded");
+            $("#pluginContainer").css("border", "1px solid black");
+            setTimeout(pluginRunTests, 500);
+        }
+
+        function pluginRunTests() {
+            var plugin = window.plugin();
+            if (plugin.valid)
+                markPassed("valid");
+            else
+                markFailed("valid");
+                
+            try {
+                var path = plugin.pluginPath;
+                if (path.length < 1) 
+                    throw (new Error("path.length < 1"));
+                $("#pluginPath").text(path);
+                markPassed("getPluginPath");
+            } catch (e) {
+                markFailed("getPluginPath");
+            }
+
+            try {
+            if (plugin.echo("Hello!") == "Hello!"
+                && plugin.echo(1234) == 1234
+                && plugin.echo(12.445) == 12.445
+                && plugin.echo(true) == true) {
+                markPassed("echo");
+            } else {
+                markFailed("echo");
+            }
+            }catch (e){alert(e)};
+
+            var tmp = Array();
+            for (var i = 0; i < 15; i++) {
+                tmp.push(i);
+            }
+            var tmp2 = plugin.reverseArray(tmp);
+            var success = true;
+            for (var i = 0; i < 15; i++) {
+                if (tmp2[i] != 14 - i) {
+                    success = false;
+                    break;
+                }
+            }
+            if (success)
+                markPassed("reverse");
+            else
+                markFailed("reverse");
+
+            var check = plugin.getUserData();
+            if (check.Name != "Richard Bateman"
+                || typeof(check.Kids) != "object"
+                || check.Kids[0] != "Caleb"
+                || typeof (check.inner) != "object"
+                || check.inner.test3 != 12.4
+                || check.inner.test != 12
+                || check.Kids[3].test4 != "asdf")
+                markFailed("getMap");
+            else
+                markPassed("getMap");
+
+            var math = plugin.simpleMath;
+            if (math.add(34, 43) != 77
+                || math.sub(10, 5) != 5) {
+                markFailed("mathAPI");
+            } else {
+                markPassed("mathAPI");
+            }
+
+            if (plugin.getPageLocation() != window.location.href)
+                markFailed("location");
+            else
+                markPassed("location");
+                
+            try {
+                if (plugin.addWithSimpleMath(plugin.simpleMath, 23, 532) != 555)
+                    markFailed("mathApiAdd");
+                else
+                    markPassed("mathApiAdd");
+            } catch (e) {
+                    markFailed("mathApiAdd");
+            }
+            var sm = plugin.simpleMath;
+            var c = plugin.countArrayLength(sm);
+            if (c!=4) {
+                markFailed("countArray");
+                alert(c);
+            }
+            else
+                markPassed("countArray");
+
+            plugin.onfired = function (str) {
+                if (str == "some string") {
+                    markPassed("simpleFireEvent");
+                } else {
+                    markFailed("simpleFireEvent");
+                }
+            };
+            var tmpFired = function (str) {
+                if (str == "some string") {
+                    markPassed("attachedFireEvent");
+                } else {
+                    markFailed("attachedFireEvent");
+                }
+            }
+            if (plugin.attachEvent) {
+                plugin.attachEvent("onfired", tmpFired);
+            } else {
+                plugin.addEventListener("fired", tmpFired, false);
+            }
+            plugin.testEvent("some string");
+
+            try {
+                thread = plugin.createThreadRunner();
+
+                thread.addMethod(function(){
+                    return PasswordDlg("Message text", function()
+                        {
+//                            alert("Dialog closed");
+                            markPassed("dialog");
+                        });});
+            }
+            catch (e) {
+                alert (e);
+            }
+            
+            var sUrl = "http://code.google.com/p/firebreath/issues/list";
+			var getUrlCallback = function(success, outheaders, data)
+			{
+                if (success) {
+                    markPassed("getURL");
+                } else {
+                    markFailed("getURL");
+                }
+				//alert("getUrlCallback: " + success + "\r\nHeaders: " + outheaders + "\r\nDataLen: " + data.lenght);
+			}
+			plugin.getURL(sUrl, getUrlCallback);
+
+            var sUrl = "http://code.google.com/p/firebreath/issues/list";
+			var sPostData = "can=1&q=&colspec=ID+Type+Status+Priority+Milestone+Owner+Summary+Stars&cells=tiles";
+			var postUrlCallback = function(success, outheaders, data)
+			{
+                if (success) {
+                    markPassed("postURL");
+                } else {
+                    markFailed("postURL");
+                }
+				//alert("postUrlCallback: " + success + "\r\nHeaders: " + outheaders + "\r\nDataLen: " + data.lenght);
+			}
+            plugin.postURL(sUrl, sPostData, postUrlCallback);
+
+            //testDiv = document.getElementById("test");
+            //var testcb = function(nplug) {
+                //if (nplug.valid) {
+                    //markPassed("dangerousInject");
+                //} else {
+                    //markFailed("dangerousInject");
+                //}
+                //testDiv.innerHTML = "";
+            //}
+            //dangerousInjection(testDiv, testcb);
+
+            if (plugin.add.apply(window, [1, 2]) == 3) {
+                markPassed("applytest");
+            } else {
+                markFailed("applytest");
+            }
+            if (plugin.add.call(window, 1, 2) == 3) {
+                markPassed("calltest");
+            } else {
+                markFailed("calltest");
+            }
+        }
+        function PasswordDlg(message, onComplete) 
+        {
+            //console.log("PasswordDlg: " +message);
+            var $template= $('<div id="PasswordDlg">\
+                    <span class="ui-icon ui-icon-key" style="float:left; margin:0 7px 20px 0;"></span>\
+                    <label>'+ message +'</label><input type="password"/></div>');
+            var dialog_finished = false;
+            var res= '';
+            $template.dialog({
+                title: "Enter some text",
+                modal: true,
+                //autoOpen: true,
+                open: function(event, ui) { 
+                    //console.log("PasswordDlg show dialog" + dialog_finished);
+                    $(this).find("input:password").keypress(function (e) {
+                        if (e.keyCode =='13') {
+                            //console.log("Enter pressed ");$template.dialog("close");
+                            }
+                        else {
+                            //console.log("keyCode: " + e.keyCode);
+                                                }
+                    });
+                },
+                close: function(e, ui) {
+                    dialog_finished = true;
+                    //console.log("PasswordDlg show close" + dialog_finished);
+                    //console.log($(this).find("input:password").val());
+                    res = $(this).find("input:password").val();
+                    $(this).dialog('destroy').remove();
+                },
+                buttons: {
+                    'ok' : function() {
+                        $(this).dialog("close");
+                    }, 
+                    'cancel': function() {
+                        res = '';
+                        $(this).dialog("close");
+                    }
+                }
+            });
+            var fn = function () {
+                //console.log("PasswordDlg internal fn: " +message);
+                //console.log("PasswordDlg internal fn: " + dialog_finished);
+                if (dialog_finished) {
+                    dialog_finished = false;
+                    onComplete();
+                    return res;
+                }
+                return fn;
+            }
+            return fn;
+        }
+
+        $(document).ready(pageLoaded);
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>FBTestPlugin - Test page</h1>
+        <small>Plugin path: <span id="pluginPath">?</span></small>
+    </div>
+    <div id="pluginContainer">
+        <br /><br /><br />Plugin will go here!
+    </div>
+    <div id="testResults">
+        <ul>
+        </ul>
+    </div>
+    <div id="test"></div>
+</body>
+</html>

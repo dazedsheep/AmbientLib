@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm
+END
+minmax.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/minmax.hpp
+END
+string_regex.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string_regex.hpp
+END
+minmax_element.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/minmax_element.hpp
+END
+string.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string.hpp
+END

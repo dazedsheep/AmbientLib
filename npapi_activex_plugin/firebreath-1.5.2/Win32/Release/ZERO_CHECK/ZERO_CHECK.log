@@ -1,0 +1,13 @@
+﻿Der Buildvorgang wurde am 02.05.2012 14:46:57 gestartet.
+     1>Projekt "C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\ZERO_CHECK.vcxproj" auf Knoten "2", build Ziel(e).
+     1>InitializeBuildStatus:
+         "Win32\Release\ZERO_CHECK\ZERO_CHECK.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+     1>CUSTOMBUILD : CMake error : The source directory "C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2" does not appear to contain CMakeLists.txt.
+         Specify --help for usage, or press the help button on the CMake GUI.
+         Checking Build System
+         CMake is re-running because C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/CMakeFiles/generate.stamp dependency file is missing.
+     1>Die Erstellung des Projekts "C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\ZERO_CHECK.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+
+Fehler beim Erstellen
+
+Verstrichene Zeit 00:00:00.09

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive
+END
+basic_binary_oprimitive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_binary_oprimitive.hpp
+END
+basic_text_oprimitive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_text_oprimitive.hpp
+END
+polymorphic_xml_woarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_xml_woarchive.hpp
+END
+xml_wiarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/xml_wiarchive.hpp
+END
+basic_xml_archive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_xml_archive.hpp
+END
+xml_woarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/xml_woarchive.hpp
+END
+xml_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/xml_iarchive.hpp
+END
+xml_archive_exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/xml_archive_exception.hpp
+END
+xml_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/xml_oarchive.hpp
+END
+basic_archive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_archive.hpp
+END
+polymorphic_text_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_text_iarchive.hpp
+END
+polymorphic_binary_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_binary_iarchive.hpp
+END
+binary_wiarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_wiarchive.hpp
+END
+text_wiarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/text_wiarchive.hpp
+END
+polymorphic_text_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_text_oarchive.hpp
+END
+polymorphic_binary_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_binary_oarchive.hpp
+END
+add_facet.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/add_facet.hpp
+END
+shared_ptr_helper.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/shared_ptr_helper.hpp
+END
+binary_woarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_woarchive.hpp
+END
+text_woarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/text_woarchive.hpp
+END
+wcslen.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/wcslen.hpp
+END
+binary_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_iarchive.hpp
+END
+text_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/text_iarchive.hpp
+END
+archive_exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/archive_exception.hpp
+END
+basic_binary_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_binary_iarchive.hpp
+END
+basic_text_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_text_iarchive.hpp
+END
+polymorphic_xml_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_xml_iarchive.hpp
+END
+tmpdir.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/tmpdir.hpp
+END
+binary_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_oarchive.hpp
+END
+text_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/text_oarchive.hpp
+END
+basic_binary_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_binary_oarchive.hpp
+END
+basic_text_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_text_oarchive.hpp
+END
+polymorphic_xml_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_xml_oarchive.hpp
+END
+dinkumware.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/dinkumware.hpp
+END
+basic_streambuf_locale_saver.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_streambuf_locale_saver.hpp
+END
+polymorphic_text_wiarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_text_wiarchive.hpp
+END
+basic_xml_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_xml_iarchive.hpp
+END
+polymorphic_iarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_iarchive.hpp
+END
+binary_iarchive_impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_iarchive_impl.hpp
+END
+polymorphic_text_woarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_text_woarchive.hpp
+END
+codecvt_null.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/codecvt_null.hpp
+END
+basic_xml_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_xml_oarchive.hpp
+END
+polymorphic_oarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_oarchive.hpp
+END
+binary_oarchive_impl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/binary_oarchive_impl.hpp
+END
+basic_binary_iprimitive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_binary_iprimitive.hpp
+END
+basic_text_iprimitive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/basic_text_iprimitive.hpp
+END
+polymorphic_xml_wiarchive.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/polymorphic_xml_wiarchive.hpp
+END

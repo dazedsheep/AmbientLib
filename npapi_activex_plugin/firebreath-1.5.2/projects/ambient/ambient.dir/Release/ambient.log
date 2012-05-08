@@ -1,0 +1,23 @@
+﻿Der Buildvorgang wurde am 02.05.2012 14:47:04 gestartet.
+     1>Projekt "C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambient.vcxproj" auf Knoten "3", build Ziel(e).
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/PluginAuto/AMB_PluginAuto.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/ActiveXCore/ActiveXCore.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/NpapiCore/NpapiCore.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/PluginCore/PluginCore.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/ScriptingCore/ScriptingCore.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/ZERO_CHECK.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/boost/libs/system/boost_system.vcxproj' does not exist.
+     1>c:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.Targets(1200,9): warning : The referenced project 'C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/boost/libs/thread/boost_thread.vcxproj' does not exist.
+     1>PrepareForBuild:
+         Das Verzeichnis "C:\Users\Mauke\Documents\Diplomarbeit\ambientLib\npapi_activex_plugin\firebreath-1.5.2\bin\ambient\Release\" wird erstellt.
+       InitializeBuildStatus:
+         "ambient.dir\Release\ambient.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+     1>CUSTOMBUILD : CMake error : The source directory "C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2" does not appear to contain CMakeLists.txt.
+         Specify --help for usage, or press the help button on the CMake GUI.
+         Building Custom Rule C:/Users/Mauke/Documents/Diplomarbeit/ambientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/CMakeLists.txt
+         CMake is re-running because C:\Users\Mauke\Documents\Diplomarbeit\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\CMakeFiles\generate.stamp dependency file is missing.
+     1>Die Erstellung des Projekts "C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambient.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+
+Fehler beim Erstellen
+
+Verstrichene Zeit 00:00:00.14

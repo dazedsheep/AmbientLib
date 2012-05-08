@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient
+END
+ambientAPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/ambientAPI.h
+END
+ambient.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/mpegrose/!svn/ver/502/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/ambient.cpp
+END
+PluginConfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/PluginConfig.cmake
+END
+ambient.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/ambient.h
+END
+Factory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/Factory.cpp
+END
+ambientAPI.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/ambientAPI.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/projects/ambient/CMakeLists.txt
+END

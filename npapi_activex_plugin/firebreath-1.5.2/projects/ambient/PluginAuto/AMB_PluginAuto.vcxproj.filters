@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\PluginInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\null\NullLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\axmain.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\axPluginObjects.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\dllmain.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\FireBreathWin.cpp">
+      <Filter>WindowsATL</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\NpapiPluginWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\np_winmain.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\PluginWindowlessWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\PluginWindowWin.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\axmain.h">
+      <Filter>WindowsATL</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\NpapiPluginWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\PluginWindowlessWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Win\PluginWindowWin.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin.tlb" />
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\NpapiPluginMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginWindowMac.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\FactoryDummiesMac.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMac.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\NpapiPluginMac.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginWindowMac.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\np_macmain.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginWindowMacCG.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginWindowMacCG.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\KeyCodesCarbon.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMacCarbon.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\KeyCodesCarbon.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMacCarbon.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\KeyCodesCocoa.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMacCocoa.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\PluginEventMacCocoa.mm">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\Mac\KeyCodesCocoa.cpp">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\NpapiPluginX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\PluginWindowX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\WindowContextX11.h">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\NpapiPluginX11.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\np_x11main.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\X11\PluginWindowX11.cpp">
+      <Filter>X11</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\PluginAuto\CMakeLists.txt" />
+    <CustomBuild Include="..\gen\FireBreathWin.tlb.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{636CD9A2-55AF-4A5E-9D98-65BC426EC52A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0745CFD9-86BB-424A-A858-239B309641B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{932F323A-02B9-48D3-BF30-37DB1B3AF327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="X11">
+      <UniqueIdentifier>{56E05C6F-FE7E-404E-BFE9-2F55EDFC8E04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{ABF9752C-2A03-404A-9BA8-DD189CBD516C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WindowsATL">
+      <UniqueIdentifier>{629114FC-B5BD-4B02-8144-AD7FB8380377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mac">
+      <UniqueIdentifier>{BA672C38-2AFF-48D7-82BE-AD2431C5F062}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\DONTTOUCHTHISPROJECT.txt" />
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\src\PluginAuto\README.txt" />
+  </ItemGroup>
+</Project>

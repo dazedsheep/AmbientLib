@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators
+END
+remove_whitespace.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/remove_whitespace.hpp
+END
+transform_width.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/transform_width.hpp
+END
+base64_from_binary.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/base64_from_binary.hpp
+END
+binary_from_base64.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/binary_from_base64.hpp
+END
+istream_iterator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/istream_iterator.hpp
+END
+dataflow_exception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/dataflow_exception.hpp
+END
+escape.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/escape.hpp
+END
+xml_escape.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/xml_escape.hpp
+END
+insert_linebreaks.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/insert_linebreaks.hpp
+END
+ostream_iterator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/ostream_iterator.hpp
+END
+unescape.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/unescape.hpp
+END
+xml_unescape.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/xml_unescape.hpp
+END
+mb_from_wchar.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/mb_from_wchar.hpp
+END
+wchar_from_mb.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/archive/iterators/wchar_from_mb.hpp
+END

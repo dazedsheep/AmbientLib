@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src
+END
+Template.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/Template.h
+END
+PluginConfig.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/PluginConfig.cmake
+END
+TemplateAPI.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/TemplateAPI.cpp
+END
+Factory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/Factory.cpp
+END
+TemplateAPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/TemplateAPI.h
+END
+Template.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/Template.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/fbgen/src/CMakeLists.txt
+END

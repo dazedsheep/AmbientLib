@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail
+END
+find_iterator.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/find_iterator.hpp
+END
+classification.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/classification.hpp
+END
+formatter_regex.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/formatter_regex.hpp
+END
+replace_storage.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/replace_storage.hpp
+END
+predicate.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/predicate.hpp
+END
+case_conv.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/case_conv.hpp
+END
+finder_regex.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/finder_regex.hpp
+END
+formatter.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/formatter.hpp
+END
+find_format_store.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/find_format_store.hpp
+END
+finder.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/finder.hpp
+END
+sequence.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/sequence.hpp
+END
+trim.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/trim.hpp
+END
+util.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/util.hpp
+END
+find_format_all.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/find_format_all.hpp
+END
+find_format.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/src/3rdParty/boost/boost/algorithm/string/detail/find_format.hpp
+END

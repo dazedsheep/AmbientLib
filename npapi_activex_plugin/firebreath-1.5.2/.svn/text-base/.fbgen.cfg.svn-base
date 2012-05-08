@@ -1,0 +1,13 @@
+[company]
+domain = www.uni-klu.ac.at
+ident = UniversityofKlagenfurt
+name = University of Klagenfurt
+
+[plugin]
+mimetype = application/x-ambient
+ident = ambient
+name = ambient
+description = Sensory Effects Plugin for Web browsers
+prefix = AMB
+disable_gui = false
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/test.html
+END
+BasicMediaPlayerPluginMac.h
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/BasicMediaPlayerPluginMac.h
+END
+projectDef.cmake
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/projectDef.cmake
+END
+BasicMediaPlayerPluginMac.mm
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/BasicMediaPlayerPluginMac.mm
+END
+wallpaper.png
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/wallpaper.png
+END
+MediaPlayerMac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/mpegrose/!svn/ver/433/branches/AmbientLib/npapi_activex_plugin/firebreath-1.5.2/examples/BasicMediaPlayer/Mac/MediaPlayerMac.cpp
+END

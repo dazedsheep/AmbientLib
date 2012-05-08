@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambientAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin_i.c">
+      <Filter>Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\ambientAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin_i.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global\axplugin_defs.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global\COM_config.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global\config.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global\resource.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\rcgen.sh.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\firebreathWin.rc">
+      <Filter>Generated</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{636CD9A2-55AF-4A5E-9D98-65BC426EC52A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{0745CFD9-86BB-424A-A858-239B309641B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{AFE79318-6761-46E1-BA9E-28C8C09FAF96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Win">
+      <UniqueIdentifier>{D1E49849-E267-48AD-AE3A-179B8F20E603}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\cmake_install.cmake" />
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\PluginConfig.cmake" />
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\ExportList_plugin.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FBControl.htm">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FBControl.rgs">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin.rgs">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin.tlb">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\FireBreathWin.tlb.rule">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\README.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\version_script.txt">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\gen\global\axplugin_defs.inc">
+      <Filter>Generated</Filter>
+    </None>
+    <None Include="C:\Users\Mauke\Documents\muhkuh\ambientLib\npapi_activex_plugin\firebreath-1.5.2\projects\ambient\Win\projectDef.cmake">
+      <Filter>Win</Filter>
+    </None>
+  </ItemGroup>
+</Project>
