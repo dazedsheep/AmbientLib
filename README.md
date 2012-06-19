@@ -5,7 +5,7 @@ Library for enriching multimedia/applications with sensory effects (e.g., ambien
 
 NOTE:
  
-Currently only Windows is supported. Linux/Unix/Mac OS support will be added in future releases.
+Currently only Windows Vista or higher is supported. Linux/Unix/Mac OS support will be added in future releases.
 
 INSTALL:
 
